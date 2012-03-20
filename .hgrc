@@ -1,0 +1,46 @@
+[web]
+push_ssl = False
+allow_push = *
+
+[ui]
+username = jinhui <pxjinhui@gmail.com>
+merge = kdiff3
+
+[auth]
+m.prefix = http://iot-hg.insigma.com.cn/
+m.username = jinhui
+m.password = 123456
+
+
+n.prefix = http://127.0.0.1
+n.username = jinhui
+n.password = 123456
+
+
+x.prefix = http://0.0.0.0
+x.username = jinhui
+x.password = 123456
+
+z.prefix = http://10.10.20.174
+z.username = jinhui
+z.password = 123456
+
+[alias]
+nudge = push --rev .
+slog = log --template '{rev}:{node|short} {desc|firstline}\n'
+cm = commit --message
+up = update --check
+. = summary
+? = compass
+: = status
+
+, = glog -l15 --template '\033[33;40m{rev} \033[37;40m{desc|firstline|fill68} \033[1;30;40m({date|age} ago by {author|person})\033[0;37;40m \033[33;40m{tags}\033[37;40m \033[35;40m{branches}\033[37;40m\n\n'
+
+,+ = , -l1000000000
+
+[extensions]
+progress =
+hgext.fetch =
+hgext.churn =
+graphlog =
+cloc = ~/cloc/cloc.py

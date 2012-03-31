@@ -1,0 +1,23 @@
+[user]
+    name = Nemo Jin
+    email = pxjinhui@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[core]
+    editor = vim
+[merge]
+    tool = vimdiff
+[alias]
+    co = checkout
+    ci = commit
+    cm = commit --message
+    st = status
+    br = branch
+    df = diff
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ls = ls-files

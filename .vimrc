@@ -33,7 +33,7 @@ set expandtab
 set smarttab
 set list
 set listchars=tab:>-,trail:-
-set foldmethod=indent "根据缩进折叠
+" set foldmethod=indent "根据缩进折叠
 set autoread
 
 nnoremap tt :NERDTreeToggle<CR>
@@ -106,7 +106,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
-nnoremap <leader>a :Ack
+nnoremap <leader>a :LAck
 
 " python auto-complete code
 " " Typing the following (in insert mode):
